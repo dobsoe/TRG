@@ -1,0 +1,1979 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8200.14.0720.2105                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='allOutput_uk' inline='true' name='textscan.41871.467172847200' version='8.3'>
+      <connection class='textscan' directory='/Users/elliedobson/Documents/Work/Customers/TRG/Code' filename='allOutput_uk.csv'>
+        <relation name='allOutput_uk#csv' table='[allOutput_uk#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='Week' ordinal='1' />
+            <column datatype='integer' name='Counts_all' ordinal='2' />
+            <column datatype='integer' name='Counts_newin_all' ordinal='3' />
+            <column datatype='integer' name='Counts_subcategory' ordinal='4' />
+            <column datatype='integer' name='Counts_newin_subcategory' ordinal='5' />
+            <column datatype='real' name='Ratio_all' ordinal='6' />
+            <column datatype='string' name='Category' ordinal='7' />
+            <column datatype='string' name='Subcategory' ordinal='8' />
+            <column datatype='integer' name='Counts_all_ret' ordinal='9' />
+            <column datatype='integer' name='Counts_newin_all_ret' ordinal='10' />
+            <column datatype='integer' name='Counts_subcategory_ret' ordinal='11' />
+            <column datatype='integer' name='Counts_newin_subcategory_ret' ordinal='12' />
+            <column datatype='real' name='Ratio_ret' ordinal='13' />
+            <column datatype='string' name='Retailer' ordinal='14' />
+            <column datatype='real' name='DeltaRatio' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Week</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Week]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Week</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_all</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_all]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_all</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_newin_all</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_newin_all]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_newin_all</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_subcategory</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_subcategory]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_subcategory</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_newin_subcategory</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_newin_subcategory]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_newin_subcategory</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ratio_all</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ratio_all]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Ratio_all</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subcategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subcategory]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Subcategory</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_all_ret</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_all_ret]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_all_ret</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_newin_all_ret</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_newin_all_ret]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_newin_all_ret</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_subcategory_ret</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_subcategory_ret]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_subcategory_ret</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Counts_newin_subcategory_ret</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Counts_newin_subcategory_ret]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Counts_newin_subcategory_ret</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ratio_ret</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ratio_ret]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Ratio_ret</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Retailer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Retailer]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>Retailer</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeltaRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DeltaRatio]</local-name>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias>DeltaRatio</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[allOutput_uk#csv]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Counts all' datatype='integer' name='[Counts_all]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts all ret' datatype='integer' name='[Counts_all_ret]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts newin all' datatype='integer' name='[Counts_newin_all]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts newin all ret' datatype='integer' name='[Counts_newin_all_ret]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts newin subcategory' datatype='integer' name='[Counts_newin_subcategory]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts newin subcategory ret' datatype='integer' name='[Counts_newin_subcategory_ret]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts subcategory' datatype='integer' name='[Counts_subcategory]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Counts subcategory ret' datatype='integer' name='[Counts_subcategory_ret]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Delta Ratio' datatype='real' name='[DeltaRatio]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Ratio all' datatype='real' name='[Ratio_all]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Ratio ret' datatype='real' name='[Ratio_ret]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='string' name='[Retailer]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' name='[Subcategory]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='real' name='[Week]' role='dimension' type='quantitative'>
+      </column>
+      <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Subcategory]' derivation='None' name='[none:Subcategory:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Retailer:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;house of fraser&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;karen millen&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;missguided&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;uniqlo&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;harrods&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;ted baker&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;matches&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;tesco&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;h&amp;m&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;river island&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;joules&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;littlewoods&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;gap&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;simply be&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;asda george&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;asos&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;jigsaw&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;marks &amp; spencer&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;selfridges&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;zara&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;debenhams&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;oasis&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;boohoo&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;reiss&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;fatface&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;harvey nichols&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;matalan&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;whistles&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;my wardrobe&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;net-a-porter&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;coast&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;new look&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;topshop&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;zalando&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;john lewis&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;peacocks&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;bhs&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;dorothy perkins&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;evans&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;next&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Subcategory:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;basketball boots &amp; hi-tops&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;bowler hat&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;cardigans&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;cold weather boots&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;drawstring bag&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;flares&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;headbands&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;knitted scarf&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;mid-heeled boots&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;padded &amp; down coat&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;prom dress&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;shoulder &amp; cross body bag&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;sports watch&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;tea dress&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;vests&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;wrap skirt&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;3/4 lengths&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;beanie&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;boyfriend coat&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;cargo trousers&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;cosmetic bag&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;driving gloves&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;flat sandals&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;hidden heel&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;lace gloves&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;mid-heeled shoes&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;para &amp; army boots&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;pyjamas&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;skater skirts&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;stole &amp; fur scarf&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;teddie&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;visors&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;ankle boots&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;biker coat&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;bralets&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;chelsea boots&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;cowboy boots&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;dungaree &amp; overalls&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;floppy hat&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;hobo bag&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;leather jacket&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;military jacket&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;peasant blouse&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;running shoes&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;slim fit&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;straw hat&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;tote&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;wayfarer&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;bandeau top&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;bodysuit&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;calf length boots&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;clutch bag&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;denim skirts&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;fine watch&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;hair ties&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;kimono coat&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;macintosh &amp; rain coat&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;necklaces&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;polo shirt&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;shift dress&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;spectacles &amp; glasses&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;t-shirts &amp; tee&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;turban&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;worker &amp; utility jacket&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;baker boy &amp; news boy&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;block-heeled boots&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;brothel creepers &amp; flatforms&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;classic&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;dancing shoes&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;fascinator&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;gladiator sandals&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;jodhpurs&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;long length gloves&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;moccasins&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;platform shoes&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;sheath dress&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;slouch boots&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;swimsuits/one-piece&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;tube skirt&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;western shirt&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;aviators&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;block heel sandal&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;brogues &amp; wing tips&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;circle skirts&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;culottes&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;espadrilles&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;fur &amp; faux fur coat&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;hot pants&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;lightweight scarf&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;mirrored eyewear&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;platform boots&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;shapewear/shape suits&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;slip-ons&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;suspenders &amp; braces&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;trilby&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;wellington boots&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;ankle strap&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;biker jacket&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;bras&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;chemise&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;crop jeans&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;ear muffs&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;fluffy&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;holdall,weekend &amp; overnight bag&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;leather shorts&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;military shirt&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;pegleg trousers&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;safari jacket&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;sling back&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;sun hat&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;track &amp; sweatpants&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;wedge boots&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;baskets&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;bowling bag&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;cargo shorts&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;corsets &amp; bustier&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;dressing gowns &amp; robes&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;flat boots&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;henley shirt&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;lace dress&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;mid-heeled sandals&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;padded jacket&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;purse &amp; wallet&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;skater dress&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;stetson &amp; western&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;tech covers&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;visor&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;wreath &amp; crown&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;alice bands&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;belt bag, fanny pack &amp; bumbag&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;boyfriend jeans&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;carrot jeans&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;cossack hat&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;drop waist dress&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;flat shoes&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;high-heeled boots&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;lace-up boots&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;midi dress&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;parka&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;riding boots&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;skinny&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;straight leg&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;tennis shoes&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;waist cincher&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;baseball cap&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;bomber &amp; blouson jacket&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;cape&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;coat dress&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;digital&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;fit &amp; flare dress&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;harrington &amp; golf jacket&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;knee-high boots&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;maxi dress&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;oversized eyewear&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;pouch&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;shoe boots &amp; booties&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;sports gloves&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;tank top&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;unclassified&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;wrap&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;balaclava&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;board shorts&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;bubble &amp; puff skirt&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;cloche&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;deck &amp; boat shoes&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;fedoras&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;grab bag&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;jumpers &amp; sweaters&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;loose fit jeans&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;monk shoes&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;playsuit &amp; romper suit&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;sheepskin &amp; shearling boots&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;smock dress&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;swing coat&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;tulip skirts&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;wide belt&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;backpack&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;block heel shoe&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;brooches, badges &amp; pins&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;city shorts&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;cut out boots&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;eyelash&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;gilets &amp; bodywarmers&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;jeans belt&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;loafers&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;mittens&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;platform sandals&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;shawl&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;slippers&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;sweater &amp; jumper dress&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;trunks&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;western &amp; rider jacket&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;bangles &amp; cuffs&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;bolero&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;camisoles&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;clutch bag - hard&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;desert &amp; chukka boots&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;fingerless gloves&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;harem pants&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;kimono top&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;mary janes&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;nightdress&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;poncho&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;shirt dress&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;sports&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;tank dress&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;umbrella &amp; parasol&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;woven scarf&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;anklets&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;bikinis/two-piece&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;briefcases&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;chino&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;crop top&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;earrings&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;formal&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;hoodies &amp; track tops&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;leather skirts&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;mini dress&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;pencil skirts&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;sarongs&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;slip&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;sundress&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;trainers &amp; sneakers&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;wedge sandals&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;baseball varsity jacket&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;bootcut&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;card holder&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;cocoon coat&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;document holder &amp; portfolio case&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;flare jeans&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;hawaiian shirt&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;knitted gloves&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;maxiskirt&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;oxfords&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;printed scarf&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;shopper&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;sports sandal&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;tankini&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;veil &amp; fascinator&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;wrap scarf&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;ballerina pumps &amp; ballet flats&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;boater&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;bucket hat&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;clog boots&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;deerstalker &amp; trapper hat&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;fine gauge&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;gypsy skirts&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;keyring&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;loungewear&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;mukluks &amp; moccasin boots&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;plimsolls&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;shell jacket&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;snood&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;swing top&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;tunic&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;wide leg pants&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;bandeau&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;bodycon dress&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;cable&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;clogs&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;denim shorts&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;fine jewellery&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;hair clips&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;kimono&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;luggage &amp; suitcase&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;mules&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;pointelle&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;shell top&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;snowboots&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;t-shirt dress&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;tunic dress&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;work boots&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;all-in-one&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;beret&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;boyfriend shirt&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;cat-eye&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;court shoes &amp; pumps&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;duffel bag&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;fleece sweatshirt&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;high-heeled sandals&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;laptop &amp; tablet bag&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;midi skirt&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;party dress&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;riding jacket&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;skinny belt&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;strapless dress&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;thigh-high boots&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;walking &amp; hiking boots&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;anorak&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;blazer &amp; sportcoat&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;briefs &amp; panties&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;chunky&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;cropped&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;embellished belt&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;frame bag&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;hosiery&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;leggings &amp; knit bottoms&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;miniskirts&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;pinafore dress&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;satchel &amp; messenger&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;slip dress&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;sunglasses&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;trench coat&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;wedge shoes&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;analog&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;biker boots&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;bracelets&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;charms&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;cover-ups&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;duffle coat&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;flip-flops &amp; thongs&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;high-heeled shoes&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;leather gloves&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;military coat&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;pea &amp; reefer jacket&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;rings&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;skorts&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;strapless top&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;tiara&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;wax jacket&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allOutput_uk' name='textscan.41871.467172847200' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.41871.467172847200'>
+            <column caption='Counts newin subcategory ret' datatype='integer' name='[Counts_newin_subcategory_ret]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Delta Ratio' datatype='real' name='[DeltaRatio]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Ratio all' datatype='real' name='[Ratio_all]' role='measure' type='quantitative'>
+            </column>
+            <column datatype='string' name='[Retailer]' role='dimension' type='nominal'>
+            </column>
+            <column datatype='string' name='[Subcategory]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[DeltaRatio]' derivation='Avg' name='[avg:DeltaRatio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ratio_all]' derivation='Avg' name='[avg:Ratio_all:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Subcategory]' derivation='CountD' name='[ctd:Subcategory:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Counts_newin_subcategory_ret]' derivation='None' name='[none:Counts_newin_subcategory_ret:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[textscan.41871.467172847200].[none:Counts_newin_subcategory_ret:qk]' included-values='in-range'>
+            <min>5</min>
+          </filter>
+          <sort class='computed' column='[textscan.41871.467172847200].[none:Retailer:nk]' direction='ASC' using='[textscan.41871.467172847200].[avg:DeltaRatio:qk]'>
+          </sort>
+          <slices>
+            <column>[textscan.41871.467172847200].[none:Counts_newin_subcategory_ret:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='width' field='[textscan.41871.467172847200].[none:Retailer:nk]' value='32' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[textscan.41871.467172847200].[none:Retailer:nk]' value='0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='1.0' field='[textscan.41871.467172847200].[avg:DeltaRatio:qk]' max='5.0' min='0.0' palette='tableau-map-temperatur' reverse='true' symmetric='false' type='interpolated' />
+            <encoding attr='color' field='[textscan.41871.467172847200].[ctd:Subcategory:qk]' palette='tableau-map-orange-blue' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern' scope='rows' value='none' />
+            <format attr='line-pattern' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[textscan.41871.467172847200].[ctd:Subcategory:qk]' value='# subcats&#10;'>
+              <formatted-text>
+                <run># subcats&#10;</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[textscan.41871.467172847200].[ctd:Subcategory:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.41871.467172847200].[none:Retailer:nk]</rows>
+        <cols>[textscan.41871.467172847200].[avg:Ratio_all:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[textscan.41871.467172847200].[ctd:Subcategory:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.41871.467172847200].[avg:Counts_all:qk]</field>
+          <field>[textscan.41871.467172847200].[ctd:Category:qk]</field>
+          <field>[textscan.41871.467172847200].[ctd:Subcategory:qk]</field>
+          <field>[textscan.41871.467172847200].[none:Category:nk]</field>
+          <field>[textscan.41871.467172847200].[none:Counts_newin_subcategory_ret:qk]</field>
+          <field>[textscan.41871.467172847200].[none:Retailer:nk]</field>
+          <field>[textscan.41871.467172847200].[sum:DeltaRatio:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAAgAElEQVR4nOzdZ5Qc53no+X9VdZjunp6cI2YQBhjkDBAgCDCBCYwiJcpKlnxl+Vq+snzv
+      eu0rr4/unvXx7rHWXluSJVuiGESRFAkGMIABIHLOM8iTc56ens6hwn4YkARFiqQoDnpG/fzO
+      ATDdU1X9vPhQT7/pKcWyLAshhBBpR011AEIIIVJDEoAQQqQpSQBCCJGmJAEIIUSasqU6gFTw
+      X/wPQh0vpToMIYRIqbRMAGYyiBEdSHUYQgiRUjIEJIQQaUoSgBBCpKlpNgRkMdx8hJ89/Ta6
+      pbLlCw/SdeRlzvfFKJm9iluWl/Ls0y/gi6rceu/ncfSeYFdDO4qrkD/7i6+T69RS3QAhhJgy
+      pl0PwLAUSstLSfjaaGztpG9giEg0iWEZXDj0Fo4ZK/j6PSvYsWsH7Z1tjIViaJpFUpcNz0II
+      cbVplgBM2k6eoCeoUZDrRtcNvJ5i5tVVcOREA0FdY3RomO7ufpwOGzZPOXPn1jLcdpRWXyzV
+      wQshxJQyzYaANOrW3UT7vlNk1t5Mcc1MvEU2TjX38cX7t7C6voycfbvo8Vt8/St3wPAl9h07
+      z6rNX2JJmTvVwQshxJSiTLdicO+Fq6AoV78GRVHee60oKFi891J59zhf4w8ItvzqGkUshBBT
+      0zTrAbz/Rv7xryeShBBCiA+adj2Az0J87ALJYHuqwxBCiJRKywQQiUaJx+OpDkMIIVJq2g0B
+      fRai0SiBYDDVYQghREpNs2WgQgghPiufOgGYiRBvvvocXePJzzKeD9BjIzz53FtEEsZ7bxrj
+      bH3uFYaDHz6ME+hq4JW3DpEwJzU0IYSY1j71EJBlxGm6eJrBmIu8rGw2rl9O17kTNLQOsHD1
+      DWRGOjnV1IvdMimZv5p5JQ6On2lj+aJqdr21h9zZS6lyRRlRCplfCMcvDbJqzTIyVJ1Du/YQ
+      SoSw3GWsX1lNPODHiIU4vG8f3SEHN25ayMnjx9GtMDlFs7hl4wrazhzgTPMQdcvWURrq4VJL
+      kCWzcjl+4iyu4lncev1SNFWWBAkhxDu073//+9//NCdaepSjhw+hZdfSvu9VKCyh5dQJouEB
+      DpxrRx29xJGuOIsqM9i27wyORBeH2yP0nn6DHiWHxh1vgwu2775IjtlNQ4+D1UtrUMwYT/zg
+      B2TMnMfpg/txl1awe/85PMlWdp0NMyMzyWgsQdOpBkprq2g8sB13biaP/XontdWFvPHSy5TV
+      lNExGGPwxE4ujZqM9fcye+lyMh0THZ5oNEo8kfgs/x+FEGLa+b3mADS7nZUbNzGrwk00FGBg
+      YABXVg5J3cAwFVZdt57rN99DefQiW99oYP2KBURD4ySSFiUleZTWLKA82cRzu86w6vqF2K4s
+      2ldshdywdiVFXg9Jw8Q0LWLREPnVM1i4qJ6iwixsueWsWr2W/Hwv4aCfzJxCFi+aT47HJBKf
+      GPupWbqcLHuUvr4m+gNywxdCiKt9+gSgqGRmZuPQICMzF1eGG0uxMzIWwmVz4nBm4XE6QHWx
+      /vrrqaqcz6L6maxbv4HEaB9RxUN19QxW1FdgZdUwpzT33et6c7PRNI1srxe3w0FhTiZ1i9cR
+      uHiAXzy5FV/YIC/bi03T8GRmUVS7nPKMII8/8RzeqpXUFmfj9biIjAeJGRpZ+WUUZKblgich
+      hPitPtN9AKZhgKKhfkxaMZIJFJsdf+dpfvjDR5m9+U/5/C0L0D5miN4ydHRFxf5hH2CZ6IaJ
+      ZrPx3mUsdN1AUbX3jf+P+nyyDFQIkfZSuhFMj4XxBeLkF+Re0wlaSQBCCJGmO4EDwSDhSCTV
+      YQghREqlZQIw9SiWIZPCQoj0lpYzo7H+I8SHTqY6DCGESCkpBSGEEGkqpQkgGhonFP2sSkmY
+      BPw+4rrUfxBCiE9iUoeAjESUsUAEI6njzsrBk6EyNurDsmXgtcV4+ldPUbHmQW5dWgFYxMIh
+      /IEQTncW2VluVEXB1GOM+oKYponbm02m28G4b5S4oZCTm4sVDzMejhId6eblnXu55QvfpMKR
+      IJK0yMnLxYyGCESiOFxZ5Hjd8oAYIYS4YlITwEjbEb73g1eoLLLhrV7NLQvh2bfOYbd0Nt60
+      kfMnT9Ct1HDLknKsZIjnn/4FHaNRRiLZ/B9//Q1y3XbC/Q389fcepbo8G1dpHQ/eXM9PHn0R
+      m91i5sotzI418sjuBiqyy+nvb8dTvov2UyfIcDmoXXMnJf37ePzgRW69+1t84Y6laJPZYCGE
+      mEY+dS2gTyI43MLFRAF/ef8qTp29wGh7LwFbHjn2KGZuLclEiA233MjPvv+3HGrxU11diJ7U
+      aT3Xg8fq4kc/eQrF7WbUUcjffOtBTp48xEjbAIXzbuNrd9RzcO8eMl0Oyhc+wDfunkNT/zDL
+      Zhew92I/CyvyGB0J4bGizFj5eR6+cwnvbDVIBjowwv2T1WwhhJgWJn0VkKZaWIoCOKiZWU5P
+      0xhxEyorCxg4FeNoYxff/f7/BXqAJx57DE/JLNAM5l53J2s23YM1fpFfv7CVp7cGSOBm/rIa
+      tu7aSahPxZlfT6ath7DTjmZXiI6P0eFPkuPQiMXjZFVW4gr4SDjsk91MIYSYdiZ1H0A8NEqP
+      P0llrou+4QDFxTm0XW5Gd2QxZ3YV/p4OBpIZLJ1TBaZOb3sLQwGdDIedqlkz8ThtBLoO8fdP
+      HOHh2zdSWj6DisJM2i5fIhBXqZk9C4JDxBx5lOTYab7chJZdhD0yynAwSdWsWajBEXRXPkV5
+      me+WiIh075ZloEKItDflN4Ilxns4dHmMdcsXYP+4YkGfkCQAIYSYBglgMkgCEEKINE0Aph4D
+      U0pBCCHSW1qWgoiPnCHhO5/qMIQQIqXSMgEYMR/JQHuqwxBCiJSSWkBCCJGmpk0C8PU189K2
+      A+hXvWfExnj0P37ApVEZzxdCiN9V6oeALIsLh3dw9EIXgbEw5TWFtPeMcf/Dn6PjyE4a2wao
+      WLgRd9/bvHzIR0m1h4tHDxBI2tm0eRMB/wjbf/Uob2hOHnzoTlqPvMWJpmHW3Ho3Wf5mdp+8
+      hC27kq986V489mmT74QQYtJNiTviyHAXg2YB2YkROsJOiujhXOcgcdMiO0Nnx95DOLMKyM0v
+      I9iwj2GquH51PdFoHNCoXbIW+8BZjh49yKvbj1FR4uaFbds4sHsXXUMhokE/0aRUCRVCiKtN
+      iQQAkFtaSV5WBgX5RXi9LuK+Pk6cOENuSTmWYZHh8qCiYmJimEkioXGG/RE0m0bt3DoKc51g
+      AXoM1ZVFWXE+JbOXMHdWEV0X93J5JJbqJgohxJSS+iEgoLh8JoYtn1zXAnILinF5FqKW1mIb
+      rWcoYLJyXhXVs2dT33mEgoU3UHN6P42tmWy6dSmO4CJynSpVc5eRPX8FpVqS0x3DLF27mRK9
+      m33HLzJv7d0sKHGluplCCDGlTOmNYJZlAgrKlSL+pmmiKCpYJhagqh/swFiWhWlaqKqCooBp
+      WqAoqFc9CCDUsZ3YwKFr1AohhJiapkQP4LdRlPff4N+94Ssqv60qkKIoaFfVDFJVeQKMEEJ8
+      mCmdACaLI2c2qi0j1WEIIURKpWUCAECZsiNfQghxTaRlAoj07yHc8XKqwxBCiJSaMstAf5Nl
+      WVw9P/2br4UQQvx+PlUC8Pe1sndfA8ZnHc0VeniEF7f+mh0nWgAID3fw3DNPcap1YJI+UQgh
+      0s+nGgIaH+hkz87zaLYgRVVzmZHv5HxjA2EyWbp0IUOtF/CUzcQa6yHqLsEaaaVjMED5zHrm
+      VGbTePw4ITJZsng+bqcNMOm4dJ6OQT+18xbhO7OdPYfO8+VlmzDNJAdeeZEjTQZ1S3zs29+C
+      M6uAAlucrqFxKmbVU+yKceZsC56CcubPraXvUgPdAYNFSxaRGOygqXeQnOJZzJ9djiwKEkKI
+      CZ8qAShAONBDa5uNrftbuH1GmKNdFnkEuNwXIKP1LWbc/afEDr/JaMkKGl79NTk1VZxt8aHP
+      1XlmZwv5jiA9kYd4aONiRi4f57GndlBVU8CrO05w6zIXquYg0+UAyyIcjqBqufi7TvHLV86x
+      5a4bOHy5GcWIsm1vE+tr/RzpgNKMi1jRBTy2dSdzS9ycbvUxTz/P9pYI9z1Q/dn+zwkhxDT3
+      qecA8ksWce+dN6MHQgx0drD8hpu5c+MCuvr7MI0kyUSMSCQBpoOFC2fiHxogMNZPR9sgCQO8
+      2QVEwnEAfH19uL2zuOv2zeRE2yifPZeKylqqinNRNTv19bOpnlFHYbaLOWs3cdf6xSQNHYfT
+      RdIXoHJGHVm6nwGfn/7WZsYTBlmZWTj1EAlD47rr7+OG5TPk278QQlzl008CKyoKFnYF5q1Y
+      xc7nHuenTx1g7YqlFBbl8cqTj7O9oRWsKC29A2RmZ2JhUb9iKc6Yn96hMcrKCwEoq6/HDJ3m
+      X370c4zyDRTYFLAmSvtMsLA068ruXwXMBP7eXnyj4+hmhN7OZnDnYEskyK9dwIxMhY6uPjJL
+      KnFpCqpd+33/n4QQ4g/OpyoFYZkmhmmhaSqGYaJpCslEHBMNp8OOZRokEkk0mw1V08DQiScN
+      7A4HNk0lkYhjWipOp32iRINloetJkkkDR4YTFTAsC03VUBQL0zSxLGXiZ0vBpiokEnFQVFRV
+      RVUVErEYis2Bw27DTMZJGBYOZwaKZWIpCqr63u5h/8WfyTJQIUTa+3RzAKqK7UrfwWab+Hbt
+      cL5XbE3RbGS4rrq06sBtf++l0/kbu3AVBZvdge2qY947W0FV3/sG/06XxfEb18hwe979WXNk
+      8F408u1fCCE+TFpuBFPtXjRXcarDEEKIlJrS1UCFEEJMnrTsAUQGzhD3NaU6DCGESKkpWwpi
+      ckmnRwghplQCSMbC+AKh3/s6ejyMzx/ElPu8EEL8VlMqAXRf2MV/vLT7yrJP68rTvcx3X7/3
+      s3nVMeYHjh+7tJ9fPLWduPnOOVJITgghftMUmwOwaD68h7878SY11z/AyoJhntvRSCJu8PCX
+      7mPr44/itwqpr7Nz4kQvN9x5J+Nn9tMVTLJo0z1cVw0/fWI7NitMbu117H3qP9l/sQ/TlsVf
+      /e13KHRNseYKIUQKTakeAEDpgtX82dfuYqy3Hdy51NZWY0V6aR/y4c0v5bt/+x1yVZ27/+S7
+      LMkLMF6xmu9/75s0HD3KsX0HWXTjFv7L/TegqQomMWLxOB6vC8OQHoAQQlxtyiUAd6YLtysD
+      FYNLx04ymrDjddkwDQu7LZP8XC8qkJ2fS25BCYHWZg4eOIo3L4ei8iLaLp3jYGMLhpkknHAz
+      s24Wgd6z9AQSqW6aEEJMKVNqH0BguJNWn8W8IieXewLke0zOXe7C7XFRWFpJIhRk7qL5dF8+
+      hbtsASUehQtnTtI5HGTB8rWUeC1OHjtOMAGFpTMpy0rScKEVzVvM9WuX4bzysPjIwGnivuYU
+      t1YIIVJrSiWAa0USgBBCTMEhICGEENdGWvYAjEQIMxlJdRhCCJFSabkuUg+0kxhvTXUYQgiR
+      UmmZAJKhHuLDp1IdhhBCpNSUnQOwTBPDMFMdhhBC/MGaWgnASrBv29PsvzzC7q2/4KePPcVg
+      2ACg/fwhnt/V+O6hp/Y+x44zLamKVAghpr2UDAF1nT/I20cukFNWx+abV3Hw9ZfpCynceMsm
+      Bgd6GE2com3nEcrW3MW5/dt4sdtHYWEOZkY1wx3n2fb6IQIjlyjaMJuOc4d543ATXpeLVTdu
+      JNZxhkNne9hw+914gu3sOtxARtEs7r9zAw5tauU7IYRIpZQkgH2vPU2HXk1hsoXLhwbZdqiJ
+      BeUaP3tWZYENPLnF5LpyqS0v5ELjq9jL1uO1BzjZ08vIhTNkz70dY7iJhL+f595+m8V3fZHD
+      zzyOOy+DY6/tZOm6BTzyyyeoifbSay+jINiEP76eIrckACGEeEcK7ogmNfNWU5xt53LTJS60
+      jWGaCTI8OVQVeLAAV04e+TmZlJUWYFNVVt90M0Vex0RFT8skt7gAb07GldcGDkcGLjuYukEy
+      HsO0ZVJWVETt0jVU5Gt0NB+n3Re/9k0VQogpLAU9AAW7qpDUoXpmPetuu5lE5FlG/ElWrpiJ
+      1TqK6nVgqyrH48mguLQSj11B9eYxo8LD8kIvW3e8AGGLFWsrqUzO542XXsUMxllVMZtNGwZp
+      6u1jxtIbyY51EEtAxdwVzMhzXPumCiHEFJayjWCGbqCoKqqqvFvPX9O0jz/xSs1/RVUhGeKZ
+      R/6TjpBKJBjmK9/6c2aV5mAYJpqmoihgGCaKMvE57wh1vE5s4PAktk4IIaa+ab8T2DKTjI+H
+      cLozcTntn+gcSQBCCPEHkAA+jdhII0m/LCEVQqS3tEwA4WicWCKZ6jCEECKl0rIURHvvMG29
+      w6kOQwghUkoWxgshRJqasgnATIZpPHuGQHyiFEQiNErjmQZiv1EeKBoYYWQ8yrljJ/CHZK2/
+      EEJ8UlNiCMiIh+gZClGY72ZoKERZkYfe7ja2v/4K1yWdlOVnU5wRpeF8MxWzaunq7sayZ1KW
+      b+epX/wnWcvuo2/7S9zx7RlYkRF6hwJU1szElgzQ3TeEzZNLbVUJqqJ8fDBCCJEmpkQCMGMj
+      PPb0K9ywspxfPX2Wbz6wgP2XA4THAxzZvZP+9l6+8af3Mzo4yLldr/D6kQ4ynQrX3byBnvY2
+      nN4mMiyL8EgnT772a3RPLvbiORSNtnIxoGDq8K2//i6lninRXCGEmBKmxBCQPbuSuc5xXn5t
+      Ly7HEL98fR/zV88nKzePu7/0deoLEgRjMfR4jLyqcuymj9FoFHtmFgXVVay8bh12TWV8ZICW
+      9iB5BUWMjwXJrS4lOt5P1EoSSxipbqYQQkwpUyIBgMb8FQvRkxl88YH1BChmUWU+igKqamGh
+      oCgKYNLX1gPeSvKcccbjOl4V9u3bT1w3yc4vo7Ysi2DAR0ZWJv2dw+SW16LGfUTl2QJCCPE+
+      U2YfQDIWwT8eISfHhS+YoCAnE//4ON7sPMJjw2RkeomEY2RmZjA0OISpOSkuLiQZ9OGLK3hU
+      C29uLvHQGCPjEfIKS3ASY2jEj+r0UFZSgHZlDuBcS48sAxVCpL0pkwCuJUkAQggxZYaAhBBC
+      XGtp2QOIxhPEE3qqwxBCiJRKy3WRpy51cbalJ9VhCCFESskQkBBCpKlJ6wGM9LShuwooyc+a
+      nOv3txPTstCDI+QWlTAw5KNmxgwcmuz2FUKIT2LSEsDZ3S/iq7qRTfNKcWbnoYcDhKIJvDl5
+      aEaE8VAMp9uLTY8S1qGgIJ9kOEA4nkA3IL+wEKdNxTKT+Eb9JBNJ7G4XejxKhjePzgunGM6o
+      ouXIK6y5/W5e2n6E73zrTyA8hqk6KczPJjDmI6HrGIqD4sI8KQUhhBBXmcQ5AJOOswf5x9dH
+      +cZ/eZA3n3+WSNLEKl/DYts5tu7uZO3N62lvvIjXY2P29ffhvvw6O3vi2EPDbPij/85dy6tJ
+      Rvr4x+/9gKw8D0Fs5Hl0bDXXszzTR4AiACwsLKD11A5e2dWAXdG5+yt/zJ5HfoTf6SEwPMZ/
+      /f7/w5y8jMlrrhBCTDOTOAdgcfzAAXJrl1JdkEtJaQVel4PO9l6SepIt3/wrNpQpDOgqZble
+      BpsuEomrbNr0ELdfv5DewcC710nmzeL+e27Da3Pz5S9tYWxshFgiTEx//0qeplPHsJwestw2
+      Lp/vJJlRxP0P/ylLZmUyHEpMXlOFEGIamsQEoHHHQ3+EvW0PB0+f59zFFjRXBoapYwGaTSG3
+      vJpsm0IkGiO7rAqnpqCoCoplcdUz3FEUUBQTUDENi4lfKVf9O/FzeU0NditJPJKksqYYVQVL
+      UTCt944WQggxYdL2AYwNdKNnZGOFfSS0TKJjA8SwYbO7yfeYqJnF5Llt9LS34AsbVM+aheEf
+      Ak8BtqSfqJZFaV4mphGlvXOUkgIPw6NBSkuy6R2Nku3Q0W0ekmE/2XkFjIyOU1KYQ3dbO1Ey
+      qKurZrh3gNyiYoKjvXgKqsnK0AA42NAiy0CFEGkvLTeCSQIQQgjZByCEEGkrLXsAiaROUpfn
+      Awgh0ltaloIwg+0Y4zIEJIRIb2mZAIxEGD06kuowhBAipWQOQAgh0tQUSQAmp996lVPNXb/T
+      WUe3/Zxt+xsmKSYhhPjDNiWGgIxgH7/eto2MmlFy71nKa9u2Y7qLuXPLrZzf+xqdo3Es1cPm
+      O6/n8Btv4ItZrLnlPoxoiKN7X+fc/rfY/OBXKYy3sO2twyiufB74/J3sf+E5BiMxLHsuX/rq
+      l8h321PdVCGEmDKmRA9AdeVQ7HUzu76cXa9upWDJrdRk+nl+5zG6+9spW3I9BVYXr+87xKmG
+      JhJ6nEAwjIVFbnkdK6syOHTgBNteeovyResoN/t5becZmjsHqVq4Dlewmb0Xh1LdTCGEmFKm
+      RAJQbE4ybQqWoZMA9ISJbiTRbBPh6VEdw0zgzHAyd/kSctUgJ44eJmYqVFdWUl6Qg2aBqVvo
+      hoFuGWBTUQ0dw9DBnCgjIYQQ4j1T5K5oY81tN6OPh9ny4JeIth9j3FnLw7euBCxaW09jFC9j
+      y/XrKfHasDJLuXnzTVTPWkB1aT45ZbXUzavl81+6l0hHA6G8BTx420JsQEtDI0rVddy6qCjV
+      jRRCiCllymwEsywLy7JQVWXiZxRIBHnxuSepv+0b1OU7UBUFyzKxLFAUlQ8r72+aJigKqhHk
+      kSe2se72+5hT7EG9qrpceOAMcV/zNWydEEJMPVMmAXwoy0LXDVSb7X3VQT/hySR1HU21ve/m
+      D5IAhBACpnoCmCTJ0CB6zJfqMIQQIqWmxDLQa81M+jAiHakOQwghUiotE0Ckbzeh9hdSHYYQ
+      QqTUFFkFJIQQ4lq7RgnA4OSut+noG3/fu30Xj3PsfPsnukJ/21n2n2qZjOCEECItTe4QkGUy
+      0tdGQ0sPJ9/aw3X5s7GHO7nQPc7CZcsZajvDnm6V8cE6Fi1fTkZ0iNNnmyidt5SKTIsLl9uJ
+      x8PkV9cT62li58kgBDqpnreSPGeY02cuQkYeKxbN4ML5NoLRCHkF+QT6eihfsJIcy0/DhVac
+      eRWsWjIH7cPWjQohRJqa1ASQiPh56t9/SPay9QxF4wRHWvjXF95kzoICGi90sbbKorPPR4l1
+      lLNnLmNa/Tiyi3nx9ZN8+YEVPP/8ThatnM1z+1p4aFU2gf52ejxD7G8dY1NlnDOtPnra2jHV
+      B9j67JvUz8zn3IVe1tbnc6zDR4n/Mk2xTBzKWWbMmUmpJy2nPIQQ4kNN6hCQnowzNOJi8003
+      MSvbS2x8lN5AApc3C6cTEkmTuvoFbFy1gPBoMwMjPtAyKMpUiSV1snPncc/dN2GGwuiWRcn8
+      Ddxxy1pCkTCRUAgTOzYVgsEYWaWlrFy9CM1Zyc3rFmIkDKoW1mPTxxjxDzAWTk5mU4UQYtqZ
+      1ATgdGexeJ7Kv/zTv3CobwRvaS0Lqty0t3Xh8BST6dQ4tPNVfvyrN5ix/FZWzZ3BcG8XUVs2
+      eW4nqAqKBXZ1IlBNVZio6qMwPjLE4PAw0XiCSCyOgoVqgaaogIKCQV9HHwklA0UBh13mu4UQ
+      4mqTuxHMsrCAZDKJzWZDURSwDBJJE7vDjsJECYikbmC321Asi2QygeZwok6cjqK89++7lwUU
+      yySpG+9e9zePtQAFi2QyiaLasGnqxOcDY+f/XZaBCiHS3uQOiisKCuBwOK56z4bTefUhCk6H
+      +u7xDmfG1ae/79933wdQNBwO7bceq1z52+FwIoQQ4oPSclZUc+Rg85SnOgwhhEiptKwFNNHk
+      tGu2EEK8T1r2ACLdu4gPnUh1GEIIkVKyNEYIIdLU9EwAls7w0AgJ3fzIw8L+UQLh2DUKSggh
+      ppeUJgDLsjB0HV3X0XUDy7IwDZ1kUsc0TQxdx7QsdF3HsiZeW5YFxhj/9sNH6R2LYRg6yWQS
+      07TevV4yOXHe0ZcfY+fJponrmDLmL4QQV0vpHEAyPMZP/ukfGVS9RCJO/uQb97P/mSfpTZos
+      WXMjYxdOUH/7Fl768Y/44n/9MrtfO8jD/+07lDosdAvGB1v5t3/9Jb1hnfk33MUNczw88thz
+      hJMqN97zR2RYBv0tJ/n77b/mS9/5G+aVelPZXCGEmFJSOwRkGejxGF/79neoy4jRdO4Uh7ti
+      zJuZT2tbC5XV2ex88TlGE1FeefFNrOK5FLneW/vf23KCQNVavv93f0rjseMc2bODmnVb+N63
+      tnD02CFCcYNDb7+Np3Y1c4ozU9hQIYSYelI8B6AADryZbhyagiszl2yHgqnYyfaWM2/ZMoaa
+      L3PLfXfT1dHHoiVz0a5s9FIV8GQXEWi+xJ7dB8gqyKO4ooK2C2fZc+A0+fmFOGw21t+6Gb15
+      P03DkZS2VAghppqU7gMwkjEunGlk5rIVdJ9tILeqlrHuS7QPjDN38Uoqcp2cbzhN5fxFXD7f
+      wrz59eR4nGBGOX2mhZlzauluOkv3SJD6JaspzVJpPH2SkZDFsjVrSQ40k8wsxvD3ksisZm5l
+      LgDhrrdlGagQIu2l5UYwSQBCCJHyISAhhBCpkpY9ACPux0yEUh2GEEKkVFqWgkj4zhP3NaY6
+      DCGESKm0TADJQBvR/gOpDkMIIVJK5gCEECJNXfME4G85wrPb95F4XxkfnW0/f4QL7aMfeW7H
+      2d386q3DH/8Z7Sd47tXdxD+6VJAQQqS1az4EZFkmkbhCYKiDt9/cRdiWyz3338Zwdwvdb77I
+      flc2Dz54G0e3b8cfDaNnlPK5B27DpSrEwqP0jnoYbD/LKzsPUzF3JbOzonRZRRSGmxnLrCMn
+      0sZgIEY4nknX2SMcOHoWZ9FMHtiyEacmHR4hhHjHNb8jJoLDDA3288bjjzPmKCYv3syTL+zG
+      MHU8hWUk+k+z93wXBw+fIqOogu6G17k0nHj3fDMZ5/nH/h0jw8Obrz5PU/8Iu/bsZPfrz/HS
+      q2/z+v4D6EaUocFeDrzyIk194wx2thKQ7oAQQrxPSr4SK1jEE0lyc/PJz/Fgxp2nu8IAACAA
+      SURBVBNYmpcFc+spycnFMCzsmQXU19WTm+vFvGqlqmVZ6PE4CQOqS0sonbGArN6j9Ci1ZPSf
+      pitUyvwyNwoW1UvWUFXooP3SEVp9UhZaCCGudk2HgCzLJBaLAxo33HcH23ceok3P4KEvbeTi
+      634y3RkUl1agZLsJz6jA5XJSUj6DrCsPf3d5C5lRZmdJ3QO8ebQZR1411VXlrNxwI0P2+RSP
+      n2a0ZDmZ3jgVpQ5cjgjxhEXV/LXU5md8dHBCCJFmrulGsHhwlCf+33/ErLubr39hA5ppgKKg
+      qr97R8TQdVRNQ1GUjzjKwjBMFEVFVd87LnD5l4S73/gULRBCiD8c1zQBWKZJOBTCmenFrn7U
+      jXtySQIQQog0LQURHThM3Hcu1WEIIURKpWUCiMTixBPJVIchhBAplZalIHoHfXQPfPSmMyGE
+      +EMnO6OEECJNSQIQQog0NW2HgIa62xgJJ1BVJzMqi+hqa0O3uamqLGO4u5OwDkVFOYwMDqNm
+      ZDN7ZiXaRy4ZFUKI9DJtE0DHxZO8+vouRijnq/cuZ8eh80QGh1h/3/0ce+qnJGZdx9K8KO0+
+      neHuDv7k+/9EXZ5sBhNCiHdM2yGg6tpa7I4sPve1h8lzOch0unA6YvjGxzGVcv63v/gq1WV5
+      uFwZKIQZCSU+/qJCCJFGpmkPIMkLj/yYlkEb2ltb6SrMYiiho8UV4roODjuaYtHZ1ENQd2Mm
+      DBJxI9VBCyHElDJN9wFY+EeGiCZNFFXF43Ez7h/H7nDgdLkxYnFyC/KIBscYC8RwOGx4svPw
+      OCfyXXNnvywDFUKkvWmaAH4/kgCEEGIazwEIIYT4/aRlD0AIIcS0nQT+/Zy81Mnlzv5UhyGE
+      ECmVlgkgnkgSisRTHYYQQqTUlJ8DsCyLZFLno0eqLPRk8n2PjhRCCPHRpnwC0CO9/OCHTxL6
+      yHX8SX74d/8nl7vGrllcQggx3U2LISDF1BnvbeLJrc/THzJYf/cX8Awfw5e/mkVqK3sGMrEs
+      SEbHePnxX9LQGWDZjVvI811id0M7iruQP/v2H5Pj1FLdFCGEmDKmfA/AsnR6R0I0nthFtHQZ
+      X3voBl5+ZSc+/wiBeIJEaJRgMACAr6eZfQdbmVVbwv4D+2lqacIXiqKqJgldhoeEEOJqUz4B
+      vMPmdOEfGKa3txdXpgtNVehrbebkhS7eubVrmgOHqmN3eSjIy8KZXcG8ebUMtx2l1RdLafxC
+      CDHVTPEhIIuAz0dSsVi+4R40+366xhJ8+4/vJUvvJbr3BKZnNivr5qDnOZmzeDl5GSYnWwa4
+      8cbNFJn97D96jlW3/hFLytypbowQQkwpU3ojmJUMs+PVrfRYJfzR3bfg0Cbq+StX6vpblgWK
+      wtVV/q9ujqLAOy+Vq54FcKixhXOtvZMevxBCTGVTugeg2NzceOfDoNmwaR8crVI+5AEvv/me
+      PANGCCE+3JTuAUyW4bEgY8FIqsMQQoiUmtI9gMmSo46QaZNSEEKI9JaWCSAZ6CA+dDLVYQgh
+      REpNm2WgQgghPlvXKAEY7N/2Io0XWtn65DYikQDnzpwnEo9y+vhZYqF+Xnh1O/7YZ/PYxkBn
+      I6/uOEzC/EwuJ4QQf5Cu0RCQSfuFC5QX1BKIhzn25nNsfbuF22+p56lnj/Lt//YQjZcusXzt
+      dTTsO0BQyWZZXRHdPou6fJWzAwqzChL0hJwUauMcaWxl0aoN1FXl0nTqEA0dftZsvJlSj87+
+      vfsZ6WmiM1nB4pk5nDh5FlfRLG65fimaKkuChBDiHddsDkABjESM1lOt1NxWgZbhwOlxgmKR
+      6XagABf2PMvuixFK1EFa2+cTH+qhI09jz1AG64vHiOXOoeX4aTbeuo7Hf/pzbtk0l7f2NnHL
+      ddX85D8f4foajeNDmczPsrASOrueeZI2qxBP+xBLViyixJOWUx5CCPGhrv0cgGJRkJNHXlYO
+      FTNmkOEspCTfA0BoLIBhJPFmF1BaMYN8LcCbp8cot/VzsFVnVlkeEUcZy5cvI9OIM+4fwVE+
+      k2XLF5KMJQj4g5TPqKK+pgJVUZixdBlee5S+vmYGAolr3lQhhJjKrlECUHBlenE67WRle8kv
+      LiUZGaZzIMrM/ACHjvXizcxk7qp1FDvi9I3GqZlbx6pVCyiqX8xNy+Yzq2YhCxcuZkVRgJ/8
+      5BFylq9h9fqbyBtr4ic/+zUr161nzcaN9J/Zy9M7TpKR4SYyHiSua2Tll5KXKd/+hRDiainb
+      CGboOoqqYVkmKBrvbPQ1dB0UBU378NLNlmWh6wY2m4aiKFiWiW5Y2DQNRQFDN1A0jYnh/olj
+      FVV73/h/pHu3LAMVQqS9lH0t1mzvfLT2W97/cIqiYLfbrnqtctVLNNvV11Owfcz1hBAiXaXl
+      3VF15mDzVqY6DCGESKm0rAVk6nEwk6kOQwghUiotewDxoQbioxdSHYYQQqSUlIIQQog0NaUS
+      gB6P0Hy5jU9awWFsoIuB0cCkxiSEEH+oplQCiPgHeOw/fsXg8CD+YATTNAkHxhgYHCIST2KZ
+      BuNjIwwOjRDXDc7vfYkdR04xMDhMPGlgJOOMDA0x4hvHtCySsQjDg4P4xsOk4VSHEEJ8pCk3
+      B2D6L/HIz3/KuFXM1+9bx7ZfPEpQs1NSv4bNS4v52WMvomoqC9fdRZlpsm/Hm5x560XW3PtN
+      Sn2H2Ha8HdXQue8b36Zvz/Mc7xzCNDS++df/k5kF8lxgIYR4x5TqAQBoGXX8j7/936n099Fw
+      fA/Ruo38w//6Dt1NTRzbu4v6G+/lf/3lw1y6dJpAVOfGO+/j67evZLC1hf0XRvjc1/+SB9fM
+      5cibO2jwJ/jGX/1PVtVlceTiYKqbJoQQU8qUSwBmopnHH32Kdmc2lXMWEjp7nCee+DU5JUXM
+      WjCf84f38sSv36CkpBq3046mqICFYnczK9/O7tee5a3GFuasXEaBYvDqM09ztnWQ+hn5qW6a
+      EEJMKVNqH4CeiNDW3EQ4ruPJr6S2PI/+zlYGxsJU1dZR4LXR0drMWNhk5ty5EBwkbs8m0wrj
+      S7oo9Bg0t3SCK4d5dbVEfP20dvbhyimmrnaiQBxAtO+YLAMVQqS9KZUArhVJAEIIMQWHgIQQ
+      QlwbadkDkFIQQggxBZeBXgvj4TihcDjVYQghREqlZQJIJpNEorFUhyGEECklcwBCCJGmplUC
+      aD31Gj99afdv/f3FIy/yi9cPX8OIhBBi+vpMJ4ETUT8vPv0MwUgAJbsKMzKKq2ol+YELFK68
+      A0/vaS7rpdyzcSFnD71Jn60K79BJkmXXY3Ueh+ISWhrPEEpo3Hb3bZzc9TrdozHW3bCeM/sO
+      kYz2Y8zcwJqcMfY39rP4ug0oPWe50Bdi9S1byPQf5dE3W5iZ7WHVnQ9QaR/ktZ3HcObN4PMP
+      3oXbPpHvhkZGGRuXInJCiPT2mfYATD3B+eMXmTdvDpfPN1Axr479h07jdZjsefsAu46eIiu3
+      ABQFj9vOwX172H/8GAd3b2fv6VZsWDi8WYx3nebA6RY6+/qZt2wdHY27cM9exYKacixMertb
+      yKtdSk68jQOdBltuXsxLz7/A0HicrMIablk3i+1vvMQLv3yesOql49RrHG31f5ZNFUKIae+z
+      HwLScqgqLcHt8VBeXowdWLx6DYMNr3PBZ2fFgjIUoLKmDtvwOfy5czHb92HmVKL5ztHUH6Go
+      KB/DMHG63cxfuphMDSzFImHo735M3ZIlFGa7SeoqqqqgXPljxgxMy0BRFSzDwFIs8ouqyPak
+      5Xy3EEL8Vp/pXVGzOVm4ahGenEIWLVxArjeHNYtn4swrZ1ZuJtqq6/Be+UR7djG3bbyZSHE9
+      zrk5mJU3UOPsp6zzGE7PbIrys8FdT5bTzo233c+zL++iJ2Fn/rJy8mJxsr1OaipvYFPHq+w4
+      cJ4HP/95SujiUlsj+xpC3LPlQcoY5I1dRzArFjKnNPOzbKoQQkx712QjWMO+F9h+uJv7v/w1
+      6sqyf/uBloVpWajqBzsmlmmCoqBcqefz3ilXzlFUFGXitWVZKFdem1fOU686T+YAhBDiGiWA
+      ZDyKgY0Mp32yP+oTkQQghBBpWgoiHIkQjcVTHYYQQqRUWs6MOglhZyzVYQghREqlZQJIjjUT
+      H2lMdRhCCJFS02onsBBCiM/ONU0Aicg4b72yi4T5yacdjMQYr7x5iFjSuOrNMLt27mcs/PEl
+      nS0jwclDb9HtlzF/IYS42jUZAvL1t3GpuRfD7qRnaICOS2dwFc4i3xbkUm+UWcV2Gi50UDxj
+      LpWZOicvtpGRmc/ChXPRjARDvb2Ex4dpvNxE0p7F0kWl7NxzhMp58+i+0IwvCguXLSPU28Jw
+      MEQkobJs5XKiA21cbGrn2MHXWVuxhsoc57VorhBCTAvXJAE0Nxzk129cYNXGDXSc7aSmKEbD
+      sX4WO9tpss/m+LOvEC+uw3/gAJtXz+GxbUfZfMd9LFgEphHjYvsA1Ye388KBbmZmZZCRfS8W
+      MNxziX0HT2P4umgZt+O59DItzkq04cv4cNC862WyS2sY7vFdi2YKIcS0ck2GgEzLYta6u7l3
+      w0IMPcmiFasZPr+Dl4/3sGplHe2tY9idbtwuD8FgiLrFa7ln83VkqApgEU8aFBTXUO016fP5
+      GBuZWMOvJ6IkTJPMDAfhkQAWLtavvZHFc6oYGx0lZndw/eZbqJ1ZeC2aKYQQ08o1SQAKoGra
+      u6/dRXNYVZODu2IJC6oqWLlyNiMDPYRNJ8UFXjTl/R0Tuwr+gQ7Cpg23aaJoKjYF9LCf8cFh
+      xkMxknqUd2YJVMvC6S2i0gOP/vsPOXqqU2a7hRDiN1yTjWCmYWCioKkKum5gs2lY5jvvqVim
+      QTSWwO5wYNMUTBM0TXu3tIOuG2iaQiIex1JUnE4Hpm6iagrxeAKbzTZR+gELRVWxLBMUFcU0
+      iCd0NJuGzW5/txxEtPegLAMVQqS9tNwJLAlACCHSdCOYojlR7N5UhyGEECmVlj0AIYQQadoD
+      CHe+SWzgSKrDEEKIlErLBADWlT9CCJG+Ur860rKIhsYZD3+yUg3JaBB/IMyHDVzFo0H8ochn
+      HKAQQvxhSlECsN59cpcFXD61m10n29977yP+9Jx8jV9u24fxgd/B5WOv8Mudx37ruUIIId6T
+      kklgMz7CD/+/HzMY0CmctZbrSn20qrNINLxNZyDG2Hic4iI7AaWQP//Te/jB3/wDngIvrpJ6
+      bqvP4PBgFrae48y/9+v4j71GqPoWHr5hLmf3PcU/P3mEkgxYfOcXmGPv4MVd57C58vj2X/0l
+      Be6JEa9w5xsyByCESHup6QEYBknDxDANXHY70XgMfyRJBBur7/4aOaEhNt17L7mOEP5okpin
+      hm/9xV/giIzQ0h8EHCxcMpu9b+7kbPswq5bU8s4jf+euu5X/8Ref42zjIXZuP0lWcQ2O+AAN
+      7fIAGCGEuFpKEkAiFsPrzWJWdRln9p9CBxQFVFXF5clA1VRczgxUVUUB8HVz7PhJwrqF1zNR
+      0XP+opWEm48Ty1lITY7j3Wt3N57n0NFGsrIKKCnyAgaaI5PiAncqmiqEEFNWSlYBZeSWc8P6
+      tbT2+Vm2oZ5yV5RyJQdmeMkpzcH75a9QWVTOLTffRrFbw55ViF3N5I77P09dAVQF7DjcFh5v
+      AcvWLOadKkPls1dyz+ZCdF3ni7etJ1cd59jxRshaw5xCSQBCCHG1Kb8RTI+N8vT20zxw1ybc
+      jvcKyh3b/ihNkTzu2nIXOU7tI67wQTIHIIQQ0yABvLOCR1EUlHcG+pkoMGcpE8XkfleSAIQQ
+      YhokgMlgxEYxE4FUhyGEECmVljuB9XgEPTya6jCEECKl0jMBREeJ+9tTHYYQQqRUSpaBWqaJ
+      YRgff6AQQohJ85kmgIi/kx898iIJ3fztB5kxnnnkR/zzD3/K/os9n+XHCyGE+B189BCQZdFy
+      6hAXu4bwj8eoqMiitT/Kvfdvpv34Ps4091O3YhNFZif7T7eTVZxNc9cwzWcO0Oqzs6DSwe79
+      J8kur+f2m9fgcdrACnP6dCu5M/Jo6urj+nkVAETGB3lr+1sMRzRuvfseApcO0tg7Sjhm4977
+      7ybadZo9xy8xY/E66jLD7G1oIR4NU7/mZuYXKrz6ynbinko233QdTYd2cNmnc+PmzSTaTrH/
+      fAuVdeu56bp5aMpHtlgIIdLGx/QALDrbztLYFyfQcoqjHeMkew9z9GIHXf2D2PRRnnp5B02X
+      TtEzDrMqCkl2n+anj79M1awKDr72Oi2+MN3Nl/FHEoDFYFsLKqO09IzjjY/QMTixGqf70ml2
+      HDxLNDBAc9cIbecO0B92UqC38+xzW/nRT7aSVAxe/vm/0XDxHGcvj5CXZfHMy3t4deujjDhm
+      UGCGaTj4Cj9/uxF1vJPHnniVpsYTdPlUqiuLUeXmL4QQ7/pEQ0ClM+dTnJdJVWU1ebmZJAND
+      XG5qxZVTgJmcGMuft2oNcyqLQHXjzlDp6vczc+lCKr12Oi6epN8fBEun4cBhCtZ+jU2zsnj5
+      xW20DIYByCosZfHCWkKjvVy6eB7DgtzCfErysjD0KFFdx7BslFXPxI5CSWkd8+tqUU0T3dDJ
+      zssnv8ALZoykruN0Z1Neko2iOFiwcC1zqvKQ+78QQrznY1cB5eQVEc10k1VeQSwnC62wkoz8
+      AgpycxkYj1NVlIU3Lxu3141mU5i7egN3rCxkT2MDmcWZRJImNQsWU5abCdhYuuEGGp5+kwFX
+      FtetyCM67gdKsdnsJOJx3DmFLFgwl8Dho1w8uY9hh5M7v/g1FpVkcqqll+zyOVQWOxhVs8jI
+      UJlZWcKG5XN58vm36Hd6uG3LrdzUF6ZvJMSSTXPw9ocI5rkm/39SCCGmmU+9EcwyDSwU1I/a
+      iWtZGKaBomqoV+/iNQ0sS0FVFSwL1CtjM5ZpYFgKNk3l9Z//AxkrH+KGhTOvfIaFYZhXrvXB
+      jzINHUvV0BQFTAPDAlXTPvRbf3jgDHFf86dpthBC/MGYsjuBk8k4imbH9ilKPXwcSQBCCDGF
+      N4LZ7c5Ju7bNlYuVXT1p1xdCiOlgyvYAJpORjGHoiVSHIYQQKTVlewCTKTLeR3S8L9VhCCFE
+      SqXoofBCCCFS7VMlgNBIH42NrXxEwYf3MZNRBgZGCY31cvpyO5/FqFNfx3naBiae82vEfJw4
+      e4HYR5WgEEII8T6/0xCQaSToam+n+3Ij+8/pzK2voLe9k6TipKq6lNDwAKP+MN7iMtSon7Fg
+      jLKqGVzc9zw7zynce4OX54/6cOlR8krLMSPjuPNKIDpK2PJQWpBFIjRG54CPpG5QXFZJjsui
+      o60DxVNARVEOg71dhGImTWfeIFx6IxmJMVTiNJ5ppry4gGgoTDwao7iqlgwjSHf/EDZ3HjVV
+      xe9biiqEEOnud0gAFt0n3+THL5+mwBUlqM3n7K4XeeFQK24zSO11d2Ne3sWxjnFWXreWjrOn
+      cLjs6DkLmcVlurph2D+f7nPneSPYjpkzhzKrD3v9LThbXiE27yE+tz6LkYsH+L8fO8zsCjeq
+      ayZrak12NfZCNMIdn7uP3c/+B8O22SyoTdJxchfn307ylS/dRJ9viOYzb/PsaxepydPxzNlA
+      se8sjT4wdfjWX3+XUk9aTnkIIcSH+h2GgEy6L3Yyf/mdPHjrzWQbcRovdbLi9q/w+ds30nH6
+      IlHVyW1f/e/M9kawz7yJP//WNxg/fZqciplUz1rFzLIcqpet4SufuwUzFmLhumUc3PUqBy5G
+      WDmvHADLjDFnyTK+8fAW8Ddw8FIzlj2b7CyLwTE/mubhu9/7LlVZLs4fP46VO4OqPCfRZBzD
+      0pm5fhNfvXcdwbEximdXEh3vJ2YliSWk/LQQQlztd/hKrDJj4Uxe+NVzdDhjRLNXcNOcGWx9
+      6T9ptCWZs/Fe9Av7UTWVyupZRHdt5cd9XjwrV1DiTTLYepLLM+egqQ5AARRKZiyhwnye+Lyb
+      KM7xvBtS4/Hd/HygEXvuElbNNHnrzADBmEJxdjZNOLBdSVtbvvYtYqd28vYp73tRqhYWKlhJ
+      Wi+Nkltey9hAB1FD5geEEOJqv9M+AMtI0t/bi67YcLq8FORkMNDXj646KSkuIBYcR3Pn4HHA
+      6NAQwZhOQXEJGUqSgcExvFkekmjkuW2MhWKEett49IknueEb32PTvEIUoOfIczxxPMYXtmwg
+      r6AYr8Oit78f1ZFJUX4OQb+f7MIi4sFRdM2DGguRVDR008KToRI37WQ5LPwRA7fdYmhkDNXp
+      oby0cKJMBBAcaZNloEKItJfCjWAm7Q2n6QwoXLduGY4r3+rDw+10BhTm1s6YtPLNkgCEECJN
+      dwJLAhBCiDRNAGnYZCGE+IC0XBc55h8nEAymOgwhhEiptEwAhmGQ1PVUhyGEECmVkgRgWRYW
+      oCjKp3tMo2VhWtbE+YoycT0LFGXimr/5WUx82gd+J4QQ6SwlxeC6zuzm8Wf28Km3Zhlj/OiH
+      j9I7FgNAHz3P3//zj/HFPuSKepTHf/j3HOmWIR8hhLjapPYA9FiIZx79GSOxOBHDg0eNErPV
+      8OC6AizVoungm7y85zRKRi73bdnI/pe3MZywWHzjPVQZl3lp7wWwYizY8BDRC/tZcvu9dB18
+      Bc/iG1EtneBIJ//67y+gWxHiWgGDbWd4bPsuTIeXL3z5i1zY+RLHznfhG+hm9r2T2VIhhJh+
+      JrUHYJkGoz3trN60Ad/IIHOXXc/I+QuEQwH8Q0GGu5sZGAsDBn7fEN39fcR1k2QizIHth1l2
+      /WYW5rrxjUQY7e4nHksw7PPjC0fpHQnQ3nSCkaxaPnfnDdhsKo37XsdvuTCDXby96xCHmnq4
+      9XOfp7o4ZzKbKcT/3959B8d5n4kd/77v9oK+WFSiESRYwF5EdcuWZKvSclF8jnN2HJ/nMh7f
+      zeUSZ24yk9FlksnEie2znblzHLlIkS3ZOstWL1QlRZCE2EEQANH7YhfYBmx/S/4gTVGyLclj
+      AovVPp8/yFlgZ/G8++7u8/6e3/P7rRAFaZlLQCaYVmr8lVgdTsorKrDaFC6W4nUUdy2bOzcQ
+      nz5F79wS1Ws20FKrcuTkSRS7xujoIOOhBRQLkE0wMtzP9FwAKxc3k7CqNlLxCNNzIQzdxGq1
+      gqpSWVJGbXUZaDnm54NEY0vLe5hCCFGALA888MADy/boJui6ypp17dhUB+2tLbjtNtrWN+Mo
+      qWZjh5+J0XGq2/fwiZt2YybmiWbt3PKxO2isVDk/GkBJJHHVbuHmm1oYHpuiorGVzk0bqXA5
+      2LH3Okr1IBOhDB0bNnLjRz+KEQmQ9azhY7feQkeNk/6+IfyNrWzZspUy18WKVzKZIp3JLNth
+      CyFEIcjzQrCL3TvAO7p5VFWhp+s5Xjo6gEVR+MTn/oKOWvfl+73jES49wG9//o7bV3QbXSk0
+      v0A0Hl/G4xJCiNVv9a4ENg2ymSymxYrDdnXnqiUBCCHEak4AyyiVTpPN5vIdhhBC5FVRrgSO
+      JTIsyMSwEKLIFWUCmAlFGRgP5DsMIYTIq7ysBP6gTNN4z507DcOg+ApYQghxdazaBKAlwzzx
+      2P/jZy90v/1D02RxYZoLI3OEJnp56MEHOTEwlrcYhRCikK3aEtDA8dd4481u7v7ydZw69DKj
+      8yk2dG7i9V/8kKB7G83qMKfmXVxDmmeeeBxrVRM37dtBZLKPI6cH2bT7RprKdQ4fegtnzTpu
+      3LMRVTaDE0KIy1ZtArDZnTidbiocSV7vuoAlFaS7P0iDCja7gsvmwF1WwXRvD5ORRfqffhiL
+      kuat559j6y03cvjYEbpGugl7W0gcfAFXzTfZ21zy/n9YCCGKxKotAdU1NlFT5ae+ysrsfBSX
+      24slZ1JWUklNfTtr17Xgq2tCT0dJaxZK3AbJRIJMuoQdu3axqbWOpXAKwzSoqG5El7ZPIYR4
+      h1WbABTVhtPlxqJYsCXjhCMpHA4La+qr6H3rGBldxeuyY7WbRCIhTIcbZ2UdnR0KP/z+P3G4
+      P8Sum69BjwYJZx20NMjVvxBCXKkAFoKZ6LqBqqqXt4vQdQOLxcLF3R5MdOPSbS7e1nIaVpsV
+      RVHQNA1FtWBR367/n+wflzZQIUTRW7VzAG9TsFgsb99SFKzWd91+1+9tdtvl21ZrARyiEELk
+      QVF+OnpcDnzl3nyHIYQQeVUAJaCrz9SzmIZ8KbwQorgV5QggHTxDZqE/32EIIURerdouICGE
+      EMvrQ58ATENjbGiUnFF0lS4hhHhPhVkCMjKcPXmGZDoJnlr27FjPcM8pZqIZNnduZmrgPA0b
+      NjEzPIiSm+c7//gS/+7v/44trdXIZhBCCHFRgSaAOI8+9DNad21l4sKzqOZ+fv3EAep9brou
+      zLPLM8VPH32c6paN3LmvhkwuTjItK4GFEOJKBVoCMlHLGrn1o7dT63MxNz1LIpXB6S3FnjPY
+      tmML4fkA/vZNNLe04XY3srHFl++ghRBiVSnQBAAWBUwFMKGmfTP1JTA1OUuJz8XjD/+KW+64
+      h6HXn+H8RIpqyyQHDg4gswBCCPG2wlwHYJoYpnl5awhFUdB1DV03L64CNgwUVb34ZTKKgp7L
+      gcWG1aKgAKnZt6QNVAhR9ApzDkBRLu/tr1z632q1cXnXh0tbQ/z2d6rdvuIhCiHEaleYCeBP
+      pFicqHbZHVQIUdwKswT0JyrCQxZCiN9RlCOAxPwwqdh0vsMQQoi8KtguICGEEH+aAkkAJpFg
+      iHT2A+zgaZosxcLEk9nlD0sIIQrYqkoAhqGjaRqapmOYJrquoWkahpnj59/73wyMh9/+mWFi
+      GDq6rl+6j4lpGGhahkNPPsLTJ6Yv3dbQdUPq/kII8S6rag5g4NDT/OTJVwlGrfzrr9zHoWde
+      YCmd4rpPfgmAxdA43/7pd4nk0my8/jO06j081jWFNR3hls9/jfKJN3nmxADppXmua7qNFx/5
+      P7x6ZgiL28fX/vZvaCx35vcAhRBiFVlVI4DmbXtZX1XCzo9+hLY6H03NnVMN4gAAFY1JREFU
+      rVR4FYZHRtBNUG02Gprb8Fc4GBseJJlOsOvmW/nCbTuZ7Bvk2GCIe/78a9y0owM9Pk33VIQv
+      fP0/sKVW5/D5uXwfnhBCrCqrKAEYnH7517zRM0mZPcfJntOcnYpS6fVimgYAsYVJuvqmqCor
+      A9PENFU8LjcuhxXFYsdvMzl3/AhDwyOozhKchs6JN99kbDZMY430/QshxJVW0ToAg/He0wwF
+      IgA0trURHB0GhwtPhQ97YomqNQ2MD5wjY3HiLimnxqWgefxUGFFmMyXUedOcPDsANistm/ZS
+      lpvjVO8wXn8ze7d3YLm0MngpNCRtoEKIoreKEsDKkQQghBCrqgQkhBBiJRXlCEDPpTA0WScg
+      hChuq6oNdKVkcgaZzAdYVCaEEB9iRZkAstksyWQy32EIIUReyRyAEEIUqbwlACM1z2M//zHj
+      ManFCyFEPixLCcg0dc52vcqxc6PUb9zHnmaVF14+irWsjjvuvI3+g88yMDbNhclJtt4a56nH
+      niWQgOtuvZPO5mowDc4ePsCJviksNge3fPI+xrpf5sJMnBtuu4saS4Rnnn0ZpbyVj3/sOnre
+      eIoLc1m2793BeO9pMoaFqjWb2NXu5pWXD+Os6eCe26/HZlGW43CFEKIgLc8IIJdkNDCPVc3w
+      s0ee5s1DL3D0wjSRqUkCY2d46IUztHd0YDNMMpEgoVSOpemzPPnGGQD0pXEeee4Ia9atY7in
+      i/OnDvLkq8dRcmG+939/xa8e/kcMfwfGzAkef+kw548fxFLdTPDMSwwnXfjtcc729PDUT37C
+      bErl9IGfcmQktiyHKoQQhWpZEoCeCXO6tx+LtwKPrtG4Zj3bWnxMDA/Qd34Su8dFWWUZVruF
+      pdkLnB8NUVblQ8/qAJiGgaIqWKwWVJsFLaOh61ksDi9ra8vRcjq+Gj/VFW5yuga4uPnmfVS4
+      bVgtFuxWFUUxyKQ1dF3DV9eG27YcRyqEEIVrWRKAxV5KR00VseASa9v9qDY7uZxGXUs7nXtv
+      4KZ1Jbz00us4vT58NU34nApLpht/mQMDsHrr2NHo5dCrh4ilc1Rv2MX1m5tZCCfo2NbJ7ffc
+      R+/B5xlY8HLHDbupa2rHZVNp3Xot8eGzHD8/gYmTW/bfhSsXR/c2srZO9gISQogrLdtCMNM0
+      ME0FVb1Ydzd0DRQVVVXBMNABi6qCaWIYBoqqolzaqwdjkQf/5/9iXvUSWzL567/799TYwTBN
+      LBbLpcfTQVVRlbfr+qOnXubBxw9T4dGo27Wfz318Nxg6iqJejgMgGo2QSCwtx2ELIUTBWLUr
+      gfVclqVECqfbg8P+QeeqDVLJBFndQqnX9XZCeRdJAEIIsYoTwHJKJpNkMul8hyGEEHlVlCuB
+      HVYTG0a+wxBCiLwqygSQjoySjozkOwwhhMgr2QpCCCGKVMEkAENLMzsTksKNEEJcJQVTAjpz
+      6BmeOBTh6399P0uBaTSrl5amehYXppkOxvDVNeMvdzI9NsqSZmXtujbMRJixqQCOMj+tDdV/
+      sCtICCGKUcEkgNDsCDOzIbqe+wUnBkK4SLDntv0MHXycpKsO1buGG9fb+OeX+yhzw/br7yJ4
+      /AVmcxYSCyE++1f/ia0Npfk+DCGEWDUKpgRUs6adujWdWCJRcoqDsrJSApEsza1rmRweJW0o
+      TA70s/3m2/n6X3yVXc0K41n47Jf/ku3rffSMLuT7EIQQYlUpmATgdXlYnD5PxlGBLZciEk/g
+      q7Ay3DfGxm0bmQuFqVm3mSMvPcl/++Y3OdKXo84OD3//uxy/EGTP+pp8H4IQQqwqBbMQTMum
+      CIUieErLSMbDaKoDv6+SzFKUcCyBp7yScq+DcChEVlfx19ZgZJYIhaPY3WX4K0svzwEk5s5J
+      G6gQougVTAK4miQBCCFEAZWAhBBCXF1FOQIQQghRQG2gV1MgtMBCJJ7vMIQQIq+KMgFomkE2
+      p+U7DCGEyKuCmwMwTRNN07hcuTJNDEMnmUiR03SkniWEEB9MwSUALR3lv/7Nf2FhKQuAaWq8
+      8svv8d+/9T/4zo9/SUo2CxJCiA+kIEtASnaGB3/wLTRHHV/50ufIJHXisUV8dWBqGZ76xU8Y
+      mE8SW8xSX6oyl7Dxt9/4K0ptlnyHLoQQq0bBjQAAULx84t57UeMBBgb7eetcCDcZIvPjvPBq
+      N5HoFOuu+xi2xRgNG6/BEx0jkpXikBBCXKkwE4CthMaaalxWK+nFIFOWcj5y8z6m+0/TPzqB
+      BlT6KrBaHZSVVOKwWZB9QIUQ4p0KrgSkWp3ccNtNuJwerr1uHw2btvEVXWNwJsy/+NJXyeRs
+      +Ev8+CvLUD96E/VNNdhvuY1SW2HmOiGEWC4fjoVgpvmO7p/32/d/ajZEKBxd3piEEGKVK7gR
+      wO+lKFLiEUKIP9KHYwTwR0qk0qQz2XyHIYQQefXhGAH8kQzdQJOVwEKIIleUCWAxkWA+HMt3
+      GEIIkVfSGiOEEEXqQ5kA4pNnee7VLrKyLYQQQvxBBVQCMhjtPcXx3hE27L6ZDbVOjh16g9kk
+      XP+RjxEbPk7PSIjWzXtY58kRXtQJjffz1okenP613HbDDiyq9AoJIcRvFUwCWBg6xcOPPM3O
+      m3fyo+/+A5//wl2cHZxlcWaQSEZj+OBr+DramYuq1O51MDsT5UDvC4ya1XiGA2zftZVaT8Ec
+      rhBCLLuCKQGllhIolkq2b99JtSVGMBxiIZKktNxBNgs79naixReYGR8gqZtgmrTu2EmJNcnM
+      7BCBuLR9CiHElQomAVSvXU9bfZofPfhjbOtuo6XKS85IsJSxoig5FiJRVIeTqvpaPE43XreT
+      RDRORrdQUllLpVeu/oUQ4koFtRDMNA10TcdqswGg6zqKxXIxi5kGmm6gWqy8Xeo30TQdRbW8
+      o/4/MxeSNlAhRNErqMtiRVGxXrGpm8Vyxf7+iorV+u4BjYLVWlCHKIQQK6YoPx3tNhsetyvf
+      YQghRF4VVAnoakmls6RlKwghRJEryhHAge7zHDozmO8whBAirwqmC0gIIcTV9aFPAKZpEFmI
+      oBdfpUsIId5TwSQA09CJhecJhhbI6QbZ1BKhYJDYUgowiEUWmAuGSKZzZJJx5ubmiC4miM0N
+      8u1v/ZSFxTSSAoQQ4m0FMwcw0XeUB3/0FFkFbrz3UwSPvshQNIXVWc4X//xOfv7QLwCdys5b
+      qZl7jcFUKVjKuLnTQ//gMbrO3sW9N6yXbw4TQohLCmYEMDZwnOaPf46//8/fYFejyYBRytf/
+      4zdorjA4M5amuakJt11lbGyOkqoaAuNTWD2lVLVupqxsM7fvWysf/kIIcYWCSQC++rUMHXyR
+      H/3gBxwdiuBeCvObR3/B5EKKOmuInqEp7G4n2WyKwGSIzTs6mZ4YJ55S8BgzdJ+ZkBKQEEJc
+      oWDWAejZFEODF1jMwvoNm8lFpxmdDlFW3UhbrZfe3gEMuxOHs4Rqt87Y1DyeylramvxMXDiP
+      tayFljUVKMBTB09LG6gQougVTAK4miQBCCFEAZWAhBBCXF1FOQJIprOks7l8hyGEEHlVMG2g
+      V9P47AJjs/P5DkMIIfIqbwnANE3mZ0bJOmtpqHL/zu+j04McOTPP7XdeiwWNN55+nrX7PkJj
+      dcm7Hsigr/t1Fis72bvO/4H+djyRYnZevg9ACFHc8pYAlgIX+O63v0/TLV/kno12TvTP0rF9
+      L+21LrreeIOpqWn6Jmzceue1WDA4f/RNJhNpquta+MiNuxk/c5SBqTAtm7YzPdRLqL4WNTRI
+      +Zp1aLMXGI7muObafaSnL9AzOomvsZOdnS1YZDGAEEIAeS4BmaYB6Tm+881XWLerlePdPdxx
+      bR3Pnoyz2Z8ibVa/fWctSTxrEHzjSZK6QmDgNEY2zgvHJrljI5x47iHGa9r59G06//DLV9i5
+      xk3vWJwt6iAvT5ncv2aHzHgLIcQV8vaZ6C4txevz0VRbzuxSFovdTXmlh4VAnLrGDWzbsJF3
+      FIYUD52bt7POX040FGA+FsPm9KAsJlCARDxJWlPILC6QzGm43aWU2g0008o1++5kb2cDilz9
+      CyHEZXlLAIrdTY1d5eDZGW7cVs/05BSqu5Y9N1/D7OmneeTJAyQdvx2gKNgcSzz5y4d4bTTJ
+      jh2tmNEI88EYVpuOptq49fN/Sbt7jv6YnQ0+O6OTASobm/E67dicRTnXLYQQ7ymvbaCmaaAb
+      JlaLQk4zsFz6Qndd11FUFfVdl+yGoWOYYLVYLt5HUVHV33NZr2vkTLBarb93/59j50boHZlZ
+      noMSQogCUZTrAM4NThCKJfMdxvvKZDI4HI58h/EHmaZJNptd1THC6n8eAdLpNE6nM99hvKdC
+      ON+maZLL5bDb7fkO5T2tlvNdlAlgbm4Ov9+PsoonBQzDYH5+Hr//g7W25oOu60QiEXw+X75D
+      eU/BYBCfz4eqrt42gLm5OWpqavIdxnvSdZ1wOEx1dfX73zlPNE0jGo2u+tfkajnfq/cdIYQQ
+      YlkVZQLweDz5DuF9KYqy6uNUFAWXy5XvMN6Xx+NZ1aM9KJzXpNv9u4s2VxNVVVd9jLB6zndR
+      loCEEEKA5YEHHngg30HkSyYRZWJ8kqziwOu6OGmkZZYYHx0jpVvxuO1EQ7NMzszhKinDZlme
+      AZOWSTAxOkZSt+BxO1AUBVPPMDEyQjxt4vU4iYdmmZieJZkx8Ho9/L7mp+WUSy8yMTpO2rDi
+      vRQjgJaKEU6ZuB1WFsNBxidnsbtLcdgsKxsggKkTnptmcjaCp6wU6xVPUnghhMXuwtRSjI+M
+      EVqI4vCWYLeucJymzkJgiqlABG95GVZVwTR0woEZpmaDWJ0ebIrG1MQYsZRGicedl9FLLr3E
+      xOX3wcXzrWeSjI2OEk9qeL0uYqEAkzOzpDImXq97xdfZZFNxJsbGSZs2vC47iqKgpZcYGxkj
+      oal4PU4Ww3OMT83i8JRht+ah4GHkmBwZIZrU8XrdqIqCqWeZHhtjPp7GW+olHVtgfGKKWDxF
+      SXnpir63izcBmBqv/OpnDASiHOvqYdc127Cgc/zFJ+gei3C66xgN9eU895uXWVycpH9GY8Pa
+      +t9pTf3T49A5ceAJjo1GOX34KG2dW/DYVYaPPs/zp2cZOd1NWW0Dr/3mCeZSGXTdRmNDzcpu
+      aWHqHHv+cU5MRDnZdZyObVtw2SxomRhP/+wH9GUb2FCl88TPf8NiKsiZwSgbO1qwrPAnwmJw
+      jEf/+QWS4SGGFjx0tFYDBoGhk/zTY8+zqXM7mUAPjzxxCD2Xw7+mmRKnbUVjjM0M8tivXyER
+      HGA0Xsm65kqS0Vl+/ugzmLkwb/XNY0+M8PrxMS6cOoJvfScV7hXuaDF13nrxVxwfj3Kq6xjr
+      t2zBbVM4feBZjkxEGT5xDLvPx8GnniSYyqCbDhrq/Sv+mux65pecmoxy4vAJNu/YhsNqcuLF
+      Z+meiNBz7Aj+2ioO/OZ5lpIBzgwvsmF908q+Jk2TiZMHeLJ7nMne49h9bdRUuJnsOcrTXecJ
+      Dp8k5Wxm9Niz9IyHyGRMmlqbsK1gnirKOQAA9BhjcZW777uXGtciwSxgJDg/Feeu+/azfo2T
+      s2f78LRv5e57PsXSUC8ZbRmqZUaS8xNR7rxvPxta3MzEE2BmeevcGPfc/2l2b29ieHyIQGCa
+      aDRKznSs/IpmfYn+2SR337eftXUWZhMZAHKLYaxWD4apEAsEMHyt3HvfZ1EmBljMGCscJMwF
+      J/Fv3MGn7t/P9PAZMgZgaMzFDKpdBqYJ8+N9LGZyhGNZLHnoCpqenaBx2x4+/bn9jPWfIGeC
+      3VXCfX92P/t2rmUxNs9QzxjX3nUvN7TVMRLIw6aFRoK+6cWL74NGB7NLKQAatuzhX376Dnyl
+      OuGFIHOBGaLRKJrpWPERKfoiF4IZ7r5vPy3VEEhlAYUN19/CDRuqyWhZFqZmUWrbufdT96OP
+      nieRXeHXpKlxvGeIT3zmk1x3TQcTs9MAVLdvZf+tO9DSSbKaycxoP7GlJZIZlWUqMvxBxZsA
+      AAUFReGdVy4KKAqoKiiYlz4kFJTlnClRFFQFVFVBufzNxcrFGBQFi6OU/V/8Kl/8s/0MHjpA
+      IJZZxmD+UIgXnytV4XKMrqoWrtnWfDni3z5XQN6+f/liCCoqF9/simpj+67dlHvtmED1+hv5
+      2r/9Mjv9OV4/NZqfGBUFVMvlGO1OL2Z4lIcfPczd+z+OW1FQFQUFBSNPT+SV5/viDyz4/BW8
+      8vAPyVVsZ+emTXzySxdfk32vv8jcYjY/MaqXzjmACapqpbppLfUemIlEL13xq793QejyB3jx
+      H1VRUFT18vtGVVRKKv10rG9lcmKI6/d/iX/zrz4L4yfpmV5a0RCLd48Ei5cqS5ajb3YTjFtx
+      LE7Ql7CxpsRB16Fu5qcSXHfrFg6/cY4Trjl0fx225Rjjqk6aypwcPtRNeHKR5u1L9I4ssaHB
+      x+uvdGELzNDU2cCbB7rYua8NvaICl2OFT5vFTYPHSteb3QQCaTZlIpwfWWRTWwO/HY54KitI
+      zR7jeLdJosKPeyXHsZdUllYzc/gEbzFDSVULc2O9uKvb8Zc6QFEBk9neHgb0atSFKL7Wkvd9
+      zKvNV+Hn9dfO050eoqJmLdPD50BR+Ml3HmXPZ/aTikaobKnkzOHD6HPTbN2Rh44W1UVjiZ2u
+      Q90Ep5Osy0XpHYywcOoVuscUPr7BSTg4y5svH2fnNa0YVZW47Cs8l2JxU+dSOHKom5m5HDtS
+      Ic5HYO7cURKV7RhWler6aoJHejh+LEeqqhbnis8BWNjQWMuh145QFh/Fv7mRs7192JIznAwq
+      1Cs53G4bJ155k8adnYQtNnZ6V3aRXVF3AcVDU/T2j1HVvI7mMoPppJN6j8aZM/2U1LXQ0VbP
+      9GAv4/NLbNq2myrv8tRi04vznDndh7euhbW1HqYiWVr9Hk52n8ZWWcemjhaCIxcYDizQtmkb
+      jb7SFb+iSUaDnO0ZoKyhlbZqJ5Mxg/ZGP5lYgNmslxafm8DYAANT83Rs2U1t+cq3h5pGjvGB
+      Pibnk2zZvZvMwii28mYqvXYmJ0bx1TahZmOcOd2LUupn66Z2HCs8CWzqWUb7zzMdSbN9z16W
+      gsOYVjcT45MAeMt8tDX76T97Bkrr2drRinWl6wJAKhbi7Nl+SupbaatxMRVOQSrKfGQJ01RZ
+      u6GDzNwUI8EwazfvoKHKu+KvyUQkQM+5Icoa22jz2ZiKQ53H4HTPAK6qOjavb2Vh4gIXpsNs
+      3Lobf9nKr7w1cwlOdZ+Gkio2rm9hcnqGtoZqenrOkTYddG7dSjY0Tt/YDL6mdXQ0167o81jU
+      CUAIIYpZUc8BCCFEMZMEIIQQRUoSgBBCFClJAEIIUaQkAQghRJGSBCCEEEVKEoAQQhQpSQBC
+      CFGk/j+GB5xtyRIaFQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
